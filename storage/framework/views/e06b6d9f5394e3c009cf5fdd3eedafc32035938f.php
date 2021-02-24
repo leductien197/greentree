@@ -36,4 +36,7 @@
             </ul>
         </div>
     </aside>
+    <script>
+
+    </script>
 <?php /**PATH C:\xampp\htdocs\blog\resources\views/frontend/master/header.blade.php ENDPATH**/ ?>

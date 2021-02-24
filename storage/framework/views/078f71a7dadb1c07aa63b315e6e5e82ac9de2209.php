@@ -1,6 +1,5 @@
-@extends('frontend.master.master')
-@section('title','about')
-@section('content')
+<?php $__env->startSection('title','about'); ?>
+<?php $__env->startSection('content'); ?>
 
 		<!-- main -->
         <div class="colorlib-shop">
@@ -17,19 +16,7 @@
 
                     <p>"Bộ Canh Nông vừa mới lập ra sẽ có hai nhiệm vụ hiện tại và tương lai:</p>
 
-                    {{-- <div class="row row-pb-sm">
-                        <div class="col-md-6">
-                            <img class="img-responsive" src="public/frontend/images/about.jpg" alt="">
-                        </div>
-                        <div class="col-md-6">
-                            <p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks
-                                and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her
-                                initial into the belt and made herself on the way.</p>
-                            <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her
-                                hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane.
-                                Pityful a rethoric question ran over her cheek, then she continued her way.</p>
-                        </div>
-                    </div> --}}
+                    
 
 
                     <p>- Thực hiện chương trình tăng gia sản xuất cấp tốc ở Bắc bộ và miền Bắc Trung bộ để giải quyết một phần vào nạn đói đang đe dọa đồng bào.</p>
@@ -56,4 +43,6 @@
         </div>
 </div>
 		<!-- end main -->
-@endsection
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('frontend.master.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\xampp\htdocs\blog\resources\views/frontend/about.blade.php ENDPATH**/ ?>

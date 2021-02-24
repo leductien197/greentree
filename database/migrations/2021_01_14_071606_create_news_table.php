@@ -24,6 +24,8 @@ class CreateNewsTable extends Migration
             $table->integer('hot');
             $table->string('img');
             $table->timestamps();
+            DB::statement('ALTER TABLE news ADD FULLTEXT `search` (`title`, `symptom`)');
+            DB::statement('ALTER TABLE news ENGINE = MyISAM');
         });
     }
 

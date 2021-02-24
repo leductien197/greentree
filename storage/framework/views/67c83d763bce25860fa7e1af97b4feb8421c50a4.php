@@ -35,8 +35,7 @@
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
 
-
-</head>
+    
 
 <body>
 	    <!--header -->
@@ -102,6 +101,10 @@
         logged_in_greeting="Xin chào ! Cảm ơn bạn đã liên hệ. Chúng tôi có thể giúp gì cho bạn."
         logged_out_greeting="Xin chào ! Cảm ơn bạn đã liên hệ. Chúng tôi có thể giúp gì cho bạn.">
     </div>
+    
+    
+    
+    
 </body>
 
 </html>

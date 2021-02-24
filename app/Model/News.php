@@ -3,18 +3,30 @@
 namespace App\Model;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Traits\FullTextSearch;
 
 class News extends Model
 {
+    use FullTextSearch;
     protected $table = "news";
+    protected $searchable = [
+        'title',
+        'symptom'
+    ];
+    public function comments()
+    {
+        return $this->hasMany('App\Model\Comment', 'news_id', 'id');
+    }
+    public function trees()
+    {
+        return $this->belongsTo('App\Model\Tree', 'trees_id', 'id');
+    }
 
-    public function comments(){
-        return $this->hasMany('App\Model\Comment','news_id','id');
-    }
-    public function trees(){
-        return $this->belongsTo('App\Model\Tree','trees_id','id');
-    }
-  // protected $fillable =[
+    /**
+     * The columns of the full text index
+     */
+
+    // protected $fillable =[
     //     'type',
     //     'code',
     //     'title',

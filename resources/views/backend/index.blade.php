@@ -30,61 +30,51 @@
                         <span class="glyphicon glyphicon-signal icon-50" aria-hidden="true"></span>
                     </div>
                     <div class="col-sm-9 col-lg-8 widget-right">
-                        <div class="large">20</div>
-                        <div class="text-muted">Bài viết tháng 1</div>
+                        <div class="large">Tổng số bài viết</div>
+                        {{-- <div class="text-muted">Bài viết tháng 1</div> --}}
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="col-xs-12 col-md-6 col-lg-3">
-            <div class="panel panel-orange panel-widget">
-                <div class="row no-padding">
-                    <div class="col-sm-3 col-lg-5 widget-left">
-                        <svg class="glyph stroked empty-message">
-                            <use xlink:href="#stroked-empty-message"></use>
-                        </svg>
-                    </div>
-                    <div class="col-sm-9 col-lg-7 widget-right">
-                        <div class="large">52</div>
-                        <div class="text-muted">Bình luận</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        {{-- <div class="col-xs-12 col-md-6 col-lg-3">
-            <div class="panel panel-teal panel-widget">
-                <div class="row no-padding">
-                    <div class="col-sm-3 col-lg-5 widget-left">
-                        <svg class="glyph stroked male-user">
-                            <use xlink:href="#stroked-male-user"></use>
-                        </svg>
-                    </div>
-                    <div class="col-sm-9 col-lg-7 widget-right">
-                        <div class="large">24</div>
-                        <div class="text-muted">Số đơn hàng</div>
-                    </div>
-                </div>
-            </div>
-        </div> --}}
-
+        <h2>
+            {{$new}}
+        </h2>
     </div>
-    <!--/.row-->
-{{--
     <div class="row">
-        <div class="col-lg-12">
-            <div class="panel panel-default">
-                <div class="panel-heading">Biểu đồ doanh thu</div>
-                <div class="panel-body">
-                    <div class="canvas-wrapper">
-                        <canvas class="main-chart" id="line-chart" height="200" width="600"></canvas>
+        <div class="col-xs-12 col-md-12 col-lg-6">
+            <div class="panel panel-blue panel-widget ">
+                <div class="row no-padding">
+                    <div class="col-sm-3 col-lg-4 widget-left">
+                        <span class="glyphicon glyphicon-signal icon-50" aria-hidden="true"></span>
+                    </div>
+                    <div class="col-sm-9 col-lg-8 widget-right">
+                        <div class="large">Cây Lúa</div>
+                        {{-- <div class="text-muted">Bài viết tháng 1</div> --}}
                     </div>
                 </div>
             </div>
         </div>
-    </div> --}}
-    <!--/.row-->
 
+        <h2> {{$lua}}</h2>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-md-12 col-lg-6">
+            <div class="panel panel-blue panel-widget ">
+                <div class="row no-padding">
+                    <div class="col-sm-3 col-lg-4 widget-left">
+                        <span class="glyphicon glyphicon-signal icon-50" aria-hidden="true"></span>
+                    </div>
+                    <div class="col-sm-9 col-lg-8 widget-right">
+                        <div class="large">Cây Ngô</div>
+                        {{-- <div class="text-muted">Bài viết tháng 1</div> --}}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2>{{$ngo}}</h2>
+    </div>
 </div>
 <!--end main-->
 @endsection

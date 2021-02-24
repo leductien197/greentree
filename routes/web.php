@@ -68,9 +68,14 @@ Route::get('new', 'frontend\NewController@getAllNew');
 Route::get('contact', 'frontend\IndexController@getContact');
 Route::get('about', 'frontend\IndexController@getAbout');
 Route::get('search', 'frontend\SearchController@getSearch');
+Route::get('autocomplete', 'frontend\SearchController@autocomplete')->name('autocomplete');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+// full text search
+Route::get('full-text-search', 'Full_text_search_Controller@index');
+
+Route::post('full-text-search/action', 'Full_text_search_Controller@action')->name('full-text-search.action');
 // bai viet
