@@ -6,7 +6,7 @@
         <div style="align-content: center">
             <div class="colorlib-shop">
                 <div style="display:flex;flex-direction:column" class="container">
-                    <label style="color:black">* 1111111111111Đối với bạn đọc còn có thắc mắc và cần tư vấn mà chưa nhận được sự trợ giúp trực tiếp từ chúng tôi, hãy điền thông tin cá nhân và vấn đề vào form dưới đây. Sau đó gửi cho chúng tôi để được hỗ trợ !</label>
+                    <label style="color:black">* Đối với bạn đọc còn có thắc mắc và cần tư vấn mà chưa nhận được sự trợ giúp trực tiếp từ chúng tôi, hãy điền thông tin cá nhân và vấn đề vào form dưới đây. Sau đó gửi cho chúng tôi để được hỗ trợ !</label>
                     <label style="margin-top:20px;color:green">Địa chỉ:</label>
                     <label style="margin-top:20px;color:green">Số 7 Thiền Quang - Hai Bà Trưng - Hà Nội</label>
                     <label style="margin-top:20px;color:green">Số điện thoại:</label>

@@ -16,6 +16,11 @@ class TreeController extends Controller
         return view('backend.Tree.listTree', $data);
     }
 
+    function backToListTree()
+    {
+        return view('backend.Tree.listTree');
+    }
+
     function editTree()
     {
         return view('backend.Tree.editTree');
@@ -43,7 +48,7 @@ class TreeController extends Controller
 
     function postEditTree(EditTreeRequest $r, $id)
     {
-        $tree =Tree::find($id);
+        $tree = Tree::find($id);
         // $tree->code = $r->code;
         $tree->name = $r->name;
         $tree->save();

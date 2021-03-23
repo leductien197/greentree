@@ -68,7 +68,7 @@
                                 <textarea name="content" class="form-control ckeditor" id="editor1">{{$new->content}}</textarea>
                        </div>
                         <button class="btn btn-success" name="add-product" type="submit">Sửa cây</button>
-                        <button class="btn btn-danger" type="reset">Huỷ bỏ</button>
+                        <button class="btn btn-danger" type="reset">Sửa Lại</button>
 
                     </div>
 

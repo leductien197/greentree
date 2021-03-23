@@ -40,7 +40,7 @@
                            <div class="row">
                                 <div class="col-md-12">
                                     <button class="btn btn-success" name="add-tree" type="submit">Thêm cây</button>
-                                    <button class="btn btn-danger" type="reset">Huỷ bỏ</button>
+                                    <button class="btn btn-danger" type="reset">Thêm Lại</button>
                                 </div>
                             </div>
                         <div class="clearfix"></div>

@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 // admin
 Route::group(['prefix' => 'admin'], function () {
     Route::get('', 'backend\IndexController@getIndex')->middleware('auth');
+    Route::get('logout', 'backend\IndexController@Logout');
 
     //benh cay
     Route::group(['prefix' => 'plantdisease'], function () {
@@ -36,6 +37,7 @@ Route::group(['prefix' => 'admin'], function () {
         Route::get('edit/{id}', 'backend\TreeController@getEditTree');
         Route::post('edit/{id}', 'backend\TreeController@postEditTree');
         Route::get('del/{id}', 'backend\TreeController@delTree');
+        // Route::get('', 'backend\TreeController@backToListTree');
     });
 
     //bai viet
@@ -56,7 +58,7 @@ Route::group(['prefix' => 'admin'], function () {
 });
 
 
-
+Route::get('/logout', 'backend\IndexController@logOut');
 
 
 
@@ -65,6 +67,8 @@ Route::group(['prefix' => 'admin'], function () {
 Route::get('', 'frontend\IndexController@getIndex');
 Route::get('detail/{id}', 'frontend\NewController@getDetail');
 Route::get('new', 'frontend\NewController@getAllNew');
+Route::get('newAll', 'frontend\NewController@getNewAll');
+// Route::get('new', 'frontend\NewController@getAllRice');
 Route::get('contact', 'frontend\IndexController@getContact');
 Route::get('about', 'frontend\IndexController@getAbout');
 Route::get('search', 'frontend\SearchController@getSearch');

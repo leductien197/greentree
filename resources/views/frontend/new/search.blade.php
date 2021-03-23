@@ -20,7 +20,7 @@
                     </div>
                     <div class="desc" style="margin:0px 20px;">
                             <h4 style="color:green"><a href=""></a>Tiêu Đề: {{$row->title}}</h4>
-                            <p style="flex-grow: 1; color:green" class="text-index">Đặc điểm:{{$row->symptom}}</p>
+                            <p style="flex-grow: 1; color:green" class="text-index">Đặc điểm: {{$row->symptom}}</p>
                     </div>
                     <p style="margin-left:20px;margin-top:auto; color:blue">Ngày đăng:{{$row->created_at}}</p>
                 </div>
@@ -28,6 +28,9 @@
             </div>
             @endforeach
         </div>
+    </div>
+    <div align='right'>
+        {!!$search->links()!!}
     </div>
 </div>
 @endsection

@@ -19,9 +19,10 @@ class SearchController extends Controller
         // $data['search'] = News::FullTextSearch('symptom', $r->search)->paginate(6);
         // dd($r->search);
         //$data['search'] = News::where('title', 'like', '%' . $r->search . '%')->orWhere('symptom', 'like', '%' . $r->search . '%')->paginate(6);
-       // dd($data['search']);
-       $data['search'] = News::search($r->search)->paginate();
-       // dd($new,$data['search']);
+        // dd($data['search']);
+        // $data['search'] = News::search($r->search)->all();
+        $data['search'] = News::search($r->search)->paginate(30);
+        // dd($new,$data['search']);
         return view('frontend.new.search', $data);
     }
     public function autocomplete(Request $request)

@@ -39,7 +39,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <button class="btn btn-success" name="edit-tree" type="submit">Sửa cây</button>
-                        <button class="btn btn-danger" type="reset">Huỷ bỏ</button>
+                        <button class="btn btn-danger" type="reset">Sửa Lại</button>
 
                     </div>
 

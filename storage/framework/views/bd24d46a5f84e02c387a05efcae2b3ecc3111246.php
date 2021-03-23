@@ -72,8 +72,8 @@
                                             language:'vi',
                                             filebrowserImageBrowseUrl:'../../editor/ckfinder/ckfinder.html?Type=Images',
                                             filebrowserFlashBrowseUrl:'../../editor/ckfinder/ckfinder.html?Type=Flash',
-                                                filebrowserImageUploadUrl:'../../editor/ckfinder/core/connection/php/connector.php?command=QuickUpload&type=Images',
-                                              filebrowserFlashUploadUrl:'../../editor/public/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash',
+                                            filebrowserImageUploadUrl:'../../editor/ckfinder/core/connection/php/connector.php?command=QuickUpload&type=Images',
+                                            filebrowserFlashUploadUrl:'../../editor/public/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash',
                                             });
                                             for ( instance in CKEDITOR.instances ){
                                                 CKEDITOR.instances[instance].updateElement();
@@ -82,7 +82,7 @@
                                     </div>
 
                                     <button class="btn btn-success" name="add-new" type="submit">Thêm bài viết</button>
-                                    <button class="btn btn-danger" type="reset">Huỷ bỏ</button>
+                                    <button class="btn btn-danger" type="reset">Thêm Lại</button>
                                 </div>
                             </div>
                         <div class="clearfix"></div>
